@@ -1,5 +1,7 @@
+import { MainContent } from './components/MainContent';
+
 function App() {
-  return <h1>Hello world!</h1>;
+  return <MainContent />;
 }
 
 export default App;
