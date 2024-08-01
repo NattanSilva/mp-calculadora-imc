@@ -33,6 +33,14 @@ export const TableHeadRow = styled.tr`
   font-weight: 600;
   font-size: 0.8rem;
   color: var(--text-one);
+
+  @media screen and (min-width: 768px) {
+    font-size: 1rem;
+  }
+
+  @media screen and (min-width: 1024px) {
+    font-size: .8rem;
+  }
 `;
 
 export const TableBody = styled.tbody`
@@ -58,4 +66,12 @@ export const TableData = styled.td`
   align-items: center;
   flex-wrap: wrap;
   font-size: 0.75rem;
+
+  @media screen and (min-width: 768px) {
+    font-size: 1rem;
+  }
+
+  @media screen and (min-width: 1024px) {
+    font-size: .75rem;
+  }
 `;

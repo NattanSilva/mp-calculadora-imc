@@ -19,6 +19,14 @@ export const FormInputContainer = styled.div`
 export const FormLabel = styled.label`
   font-size: 1rem;
   color: var(--text-one);
+
+  @media screen and (min-width: 768px) {
+    font-size: 1.25rem;
+  }
+
+  @media screen and (min-width: 1024px) {
+    font-size: 1rem;
+  }
 `;
 
 export const FormInput = styled.input`
@@ -38,6 +46,16 @@ export const FormInput = styled.input`
   &:focus {
     outline: none;
   }
+
+  @media screen and (min-width: 768px) {
+    height: 2.5rem;
+    font-size: 1.25rem;
+  }
+
+  @media screen and (min-width: 1024px) {
+    height: 2rem;
+    font-size: 1rem;
+  }
 `;
 
 export const FormSubmitBtn = styled.button`
@@ -54,5 +72,15 @@ export const FormSubmitBtn = styled.button`
   &:disabled {
     background-color: var(--disabled-input);
     cursor: not-allowed;
+  }
+
+  @media screen and (min-width: 768px) {
+    height: 2.5rem;
+    font-size: 1.25rem;
+  }
+
+  @media screen and (min-width: 1024px) {
+    height: 2rem;
+    font-size: 1rem;
   }
 `;

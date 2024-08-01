@@ -24,5 +24,21 @@ export const InfoTableData = styled.td`
     color: var(--border-and-btn-bg);
     font-weight: 600;
     font-size: 1rem;
+
+    @media screen and (min-width: 768px) {
+      font-size: 1.25rem;
+    }
+
+    @media screen and (min-width: 1024px) {
+    font-size: 1rem;
+  }
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 1rem;
+  }
+
+  @media screen and (min-width: 1024px) {
+    font-size: .8rem;
   }
 `;
