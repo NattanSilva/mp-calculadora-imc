@@ -18,13 +18,21 @@ export const SectionContainer = styled.section`
   gap: 0.5rem;
   margin-top: 0.5rem;
   background-color: var(--text-button);
-  border: 1px solid red;
+  border-radius: 0.5rem;
 
   @media screen and (min-width: 768px) {
     width: 80%;
     height: auto;
     gap: 1rem;
     padding: 5% 8%;
+    margin-top: 0;
+  }
+
+  @media screen and (min-width: 900px) {
+    width: 60%;
+    height: auto;
+    gap: 0.5rem;
+    padding: 2% 6%;
     margin-top: 0;
   }
 

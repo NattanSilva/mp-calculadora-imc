@@ -1,3 +1,4 @@
+import { ImcRegister } from '../../providers/GlobalContext';
 import {
   TableBody,
   TableContainer,
@@ -9,16 +10,8 @@ import {
 
 const tableheadsList = ['Peso', 'Altura', 'IMC', 'Resultado'];
 
-export type TableData = {
-  id: number;
-  peso: number;
-  altura: number;
-  imc: number;
-  result: string;
-};
-
 type GraphicTableProps = {
-  data: TableData[];
+  data: ImcRegister[];
 };
 
 export const GraphicTable = ({ data }: GraphicTableProps) => {

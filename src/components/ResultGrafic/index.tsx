@@ -1,11 +1,11 @@
+import { useContext } from 'react';
+import { GlobalContext } from '../../providers/GlobalContext';
 import { GraphicTable } from '../GraphicTable';
 import { GraphicContainer, VoidListMessage } from './styles';
 
-const database = [
-  { id: 1, peso: 65, altura: 1.65, imc: 22.04, result: 'Peso normal' },
-];
-
 export const ResultGraphic = () => {
+  const { database } = useContext(GlobalContext);
+
   return (
     <GraphicContainer>
       {database.length > 0 ? (
